@@ -3,18 +3,27 @@
   "name": "YouTube AI Navigator",
   "version": "1.0",
   "description": "Navigate YouTube videos using AI and transcripts.",
-  "permissions": ["activeTab", "scripting"],
-  "host_permissions": ["https://www.youtube.com/*"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
   "action": {
     "default_popup": "popup.html"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["contentScript.js"]
+      "js": ["contentScript.js"],
+      "run_at": "document_end",
+      "all_frames": false
     }
   ],
   "icons": {

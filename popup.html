@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -58,6 +59,97 @@
     <p id="statusMessage"></p>
 
     <script src="popup.js"></script>
+=======
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube AI Navigator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    #userQuery {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    #goButton {
+      width: 100%;
+      padding: 8px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    #goButton:hover {
+      background-color: #cc0000;
+    }
+    
+    #resultsContainer {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    .timestamp-result {
+      margin-bottom: 12px;
+      padding: 8px;
+      background-color: #f8f8f8;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+    
+    .timestamp-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    
+    .timestamp-button:hover {
+      background-color: #1976D2;
+    }
+    
+    .timestamp-summary {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    #statusMessage {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .loading {
+      color: #2196F3;
+    }
+    
+    .error {
+      color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="userQuery" placeholder="Enter your request">
+  <button id="goButton">Search</button>
+  <div id="resultsContainer"></div>
+  <p id="statusMessage"></p>
+  <script src="popup.js"></script>
+>>>>>>> 6a9cce9 (Created project)
 </body>
 
 </html>
