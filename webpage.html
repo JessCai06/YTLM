@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- YouTube Link Input Section -->
+    <div class="container">
+        <h1 class="title">YouTube AI Chatbot</h1>
+        <input type="text" id="youtubeLink" placeholder="Enter YouTube video link here">
+        <button id="embedButton">Embed Video</button>
+    </div>
+
+    <!-- Video and Transcript Container -->
+    <div class="video-transcript-container">
+        <!-- Embedded YouTube Video -->
+        <div class="video-container" id="videoContainer">
+            <iframe id="youtubeVideo" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- Transcript Section (Initially Empty) -->
+        <div class="transcript-container" id="transcriptContainer">
+            <h2>Video Transcript</h2>
+            <p id="transcriptContent">The transcript will appear here once the video is embedded.</p>
+        </div>
+    </div>
+
+    <!-- Chatbot Section -->
+    <div id="chatbotContainer">
+        <div id="chatbotHeader" onclick="toggleChatbot()">Chat about this Video</div>
+        <div id="chatDisplay"></div>
+        <div id="chatInputArea">
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Placeholder JavaScript for embedding YouTube video and adding transcript
+
+        document.getElementById('embedButton').addEventListener('click', function () {
+            const youtubeLink = document.getElementById('youtubeLink').value;
+            const videoId = youtubeLink.split('v=')[1];
+            if (videoId) {
+                document.getElementById('youtubeVideo').src = `https://www.youtube.com/embed/${videoId}`;
+
+                // Simulate fetching the transcript (replace with actual API call or scraping code)
+                document.getElementById('transcriptContent').textContent = "This is a simulated transcript for the video.";
+            } else {
+                alert("Please enter a valid YouTube link.");
+            }
+        });
+
+        function toggleChatbot() {
+            const chatbot = document.getElementById('chatbotContainer');
+            chatbot.style.display = chatbot.style.display === 'none' || chatbot.style.display === '' ? 'flex' : 'none';
+        }
+    </script>
+
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- YouTube Link Input Section -->
+    <div class="container">
+        <h1 class="title">YouTube AI Chatbot</h1>
+        <input type="text" id="youtubeLink" placeholder="Enter YouTube video link here">
+        <button id="embedButton">Embed Video</button>
+    </div>
+
+    <!-- Video and Transcript Container -->
+    <div class="video-transcript-container">
+        <!-- Embedded YouTube Video -->
+        <div class="video-container" id="videoContainer">
+            <iframe id="youtubeVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Transcript Section (Initially Empty) -->
+        <div class="transcript-container" id="transcriptContainer">
+            <h2>Video Transcript</h2>
+            <p id="transcriptContent">The transcript will appear here once the video is embedded.</p>
+        </div>
+    </div>
+
+    <!-- Chatbot Section -->
+    <div id="chatbotContainer">
+        <div id="chatbotHeader" onclick="toggleChatbot()">Chat about this Video</div>
+        <div id="chatDisplay"></div>
+        <div id="chatInputArea">
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Placeholder JavaScript for embedding YouTube video and adding transcript
+
+        document.getElementById('embedButton').addEventListener('click', function() {
+            const youtubeLink = document.getElementById('youtubeLink').value;
+            const videoId = youtubeLink.split('v=')[1];
+            if (videoId) {
+                document.getElementById('youtubeVideo').src = `https://www.youtube.com/embed/${videoId}`;
+
+                // Simulate fetching the transcript (replace with actual API call or scraping code)
+                document.getElementById('transcriptContent').textContent = "This is a simulated transcript for the video.";
+            } else {
+                alert("Please enter a valid YouTube link.");
+            }
+        });
+
+        function toggleChatbot() {
+            const chatbot = document.getElementById('chatbotContainer');
+            chatbot.style.display = chatbot.style.display === 'none' || chatbot.style.display === '' ? 'flex' : 'none';
+        }
+    </script>
+
+</body>
+</html>
+
+
+</html>
