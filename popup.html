@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>YouTube AI Navigator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      width: 200px;
-      margin: 0;
-      padding: 10px;
-    }
-    #userQuery {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-    }
-    #goButton {
-      width: 100%;
-      padding: 5px;
-      box-sizing: border-box;
-    }
-    #statusMessage {
-      margin-top: 10px;
-      font-size: 14px;
-      color: green;
-    }
-  </style>
-</head>
-<body>
-  <input type="text" id="userQuery" placeholder="Enter your request">
-  <button id="goButton">Go</button>
-  <p id="statusMessage"></p>
 
-  <script src="popup.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube AI Navigator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 200px;
+            background-color: lightgray;
+            /* Changed background color */
+            margin: 0;
+            padding: 10px;
+        }
+
+        #userQuery {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            /* Rounded edges */
+            border: 1px solid #cccccc;
+            /* Thin, uniform border color */
+            outline: none;
+            /* Remove the thick outline on focus */
+        }
+
+        #goButton {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: #5a9bd5;
+            /* Softer blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #goButton:hover {
+            background-color: #4b0082;
+            /* Dark purple on hover */
+        }
+
+        #statusMessage {
+            margin-top: 10px;
+            font-size: 14px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="userQuery" placeholder="Start chatting!">
+    <button id="goButton">Go</button>
+    <p id="statusMessage"></p>
+
+    <script src="popup.js"></script>
 </body>
+
 </html>
